@@ -1,0 +1,14 @@
+@import 'about.scss';
+@import 'fast-start.scss';
+@import 'advantages.scss';
+@import 'partners.scss';
+@import 'readers.scss';
+
+main {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 200px;
+}

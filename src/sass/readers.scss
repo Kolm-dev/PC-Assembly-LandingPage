@@ -1,0 +1,67 @@
+.readers {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	justify-content: center;
+	width: 100%;
+
+
+}
+
+.readers__title {
+	font-size: $font-size-48;
+	font-weight: 700;
+	text-align: left;
+	grid-column: 1 / -1;
+	margin-bottom: 110px;
+
+	&::before {
+		content: '';
+		display: inline-block;
+		width: 127px;
+		height: 127px;
+		background: url('../img/icon-heading.png') no-repeat center center;
+		background-size: contain;
+		margin-right: 20px;
+		vertical-align: middle;
+		transform: rotate(320deg);
+	}
+}
+
+.teacher {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.teacher-photo {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+
+
+}
+
+.teacher-name {
+	font-size: 24px;
+	font-weight: 500;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.subtitle {
+	font-size: 16px;
+	font-weight: 400;
+	opacity: 40%;
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+
+.bio-teacher {
+	border: 1px solid #ffffff;
+	border-radius: 50px;
+	padding: 10px;
+	margin-top: 30px;
+
+
+}

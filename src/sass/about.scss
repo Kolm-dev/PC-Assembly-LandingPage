@@ -1,0 +1,28 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+.about__img {
+  background-image: url('../img/about__img.png');
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 542px;
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-left: 139px;
+}
+.about__title {
+  font-size: $font-size-48;
+  color: $white;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+.about__text {
+  font-size: $font-size-16;
+  font-weight: 400;
+}

@@ -1,0 +1,171 @@
+.header {
+  background-image: url('../img/header_bg.png');
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
+
+
+  .header--top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .logo {
+      background-image: url('../img/logo.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 40px;
+    }
+
+    nav {
+      width: 50%;
+
+      .nav__list {
+        display: flex;
+        gap: 56px;
+
+        list-style-type: none;
+
+        .list__link {
+          font-size: $font-size-16;
+          font-weight: 400;
+          color: $white;
+          text-decoration: none;
+          transition: color 0.3s;
+
+          &:hover {
+            color: purple;
+          }
+        }
+      }
+    }
+
+    .login {
+      width: 183px;
+      height: 44px;
+      background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+      border-radius: 50px;
+      padding: 10px, 30px, 10px, 30px;
+      color: $white;
+    }
+  }
+
+  .header--medium {
+    padding-top: 198px;
+
+    .header__title {
+      font-size: 64px;
+      font-weight: 700;
+    }
+
+    .header__time {
+      display: flex;
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .time__item {
+      width: 102px;
+      height: 112px;
+      background: #121212;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text1 {
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    .text2 {
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: lowercase;
+      opacity: 40%;
+    }
+  }
+
+  .header--bottom {
+    background: #121212;
+    padding-top: 35px;
+    padding-bottom: 28px;
+    margin-top: 218px;
+    width: 100%;
+  }
+
+  .header--bottom .container {
+    display: flex;
+    gap: 81px;
+    align-items: flex-start;
+
+    .header--bottom--font2 {
+      font-size: $font-size-16;
+      font-weight: 400;
+      opacity: 40%;
+    }
+
+    .header--bottom--font1 {
+      font-size: $font-size-16;
+      font-weight: 700;
+    }
+
+    .course-order-button {
+      background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+      border-radius: 50px;
+      padding: 10px 30px;
+      color: $white;
+      font-weight: 700;
+      width: 169px;
+      align-self: center;
+    }
+
+    .course-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .cource-info--block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & .total-graduated,
+      .total-over {
+        display: inline;
+        margin-left: 10px;
+      }
+    }
+
+    .student-earnings {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+
+      .range-wrapper {
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+      }
+
+      .total-earnings {
+        display: flex;
+        justify-content: space-between;
+      }
+
+
+
+      .progress-bar {
+        background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+        height: 6px;
+      }
+    }
+  }
+}
